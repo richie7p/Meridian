@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Meridian",
+      "hasCanvas": false,
+      "bodyTextLen": 329,
+      "bodyTextHash": "abde0fa945239e361989abec3bf2eca2edeba078a27caea1101502a1f7827018",
+      "bodyTextPrefix": "Meridian OBSERVATORY Meridian 精選地標地球儀 極地 麥克默多站 McMurdo Station 雷",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Meridian",
+      "hasCanvas": false,
+      "bodyTextLen": 76,
+      "bodyTextHash": "17261d726ecd9c3d7c535c6e1e525c65b8879fe8524aba302ab115e998b9ce08",
+      "bodyTextPrefix": "Meridian OBSERVATORY Meridian 精選地標地球儀 拖曳旋轉地球。點擊發光標記，或從列表選擇地標以聚焦。",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

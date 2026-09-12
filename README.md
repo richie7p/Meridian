@@ -36,7 +36,7 @@
 
 資料在 [`src/lib/locations.ts`](src/lib/locations.ts)。
 
-## 技術梯
+## 技術棧
 
 - [React 19](https://react.dev/) + [TanStack Start](https://tanstack.com/start)
 - [Three.js](https://threejs.org/) · [React Three Fiber](https://r3f.docs.pmnd.rs/) · [drei](https://github.com/pmndrs/drei)

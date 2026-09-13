@@ -1,5 +1,9 @@
 # Meridian
 
+**繁體中文** | [English](README.en.md)
+
+**[線上展示 / Live Demo](https://glow-raven-quartz-opal.grok.me/)**
+
 精選地標 3D 地球儀。拖曳旋轉，點擊發光標記以聚焦。
 
 <p align="center">
@@ -48,8 +52,8 @@
 需要 Node.js 22 與 npm。
 
 ```bash
-git clone https://github.com/richie7p/glow-raven-quartz-opal.git
-cd glow-raven-quartz-opal
+git clone https://github.com/richie7p/Meridian.git
+cd Meridian
 npm install
 npm run dev
 ```
@@ -76,4 +80,4 @@ public/textures/        地球日/夜/法線/高光/雲層貼圖
 
 ## 授權
 
-私有倉庫。地球貼圖取自 three.js 範例資源與 NASA 風格藍大理石公開影像。
+本專案未附授權檔案；如需轉用，請先與倉庫擁有者確認。原始專案說明註記：地球貼圖取自 three.js 範例資源與 NASA 風格藍大理石公開影像。

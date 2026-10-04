@@ -59,6 +59,9 @@ export function CameraFocus() {
     }
 
     if (reducedMotion) {
+      anim.current.active = false;
+      controls.enabled = true;
+      setFlying(false);
       camera.position.setFromSpherical(_work);
       camera.lookAt(0, 0, 0);
       controls.target.set(0, 0, 0);

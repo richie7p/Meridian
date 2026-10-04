@@ -1,7 +1,13 @@
+import { supportsWebGL2 } from "@/lib/webgl";
+import { createClientOnlyFn } from "@tanstack/react-start";
+import { SceneBoundary } from "./SceneBoundary";
 import { useEffect, useState, type ComponentType } from "react";
 import { useGlobeStore } from "@/lib/store";
 
+const loadGlobe = createClientOnlyFn(() => import("./GlobeCanvas"));
+
 export function GlobeView() {
+  const [failed, setFailed] = useState(false);
   const [Scene, setScene] = useState<ComponentType | null>(null);
   const setReducedMotion = useGlobeStore((s) => s.setReducedMotion);
 
@@ -15,13 +21,16 @@ export function GlobeView() {
 
   useEffect(() => {
     let live = true;
-    void import("./GlobeCanvas").then((mod) => {
+    if (!supportsWebGL2()) { setFailed(true); return; }
+    void loadGlobe().then((mod) => {
       if (live) setScene(() => mod.GlobeCanvas);
-    });
+    }).catch(() => { if (live) setFailed(true); });
     return () => {
       live = false;
     };
   }, []);
+
+  if (failed) return <p role="alert" className="absolute top-1/3 right-6 text-fg">地球儀載入失敗或瀏覽器不支援 WebGL，仍可從列表探索地標。<button onClick={() => window.location.reload()}>重新載入</button></p>;
 
   if (!Scene) {
     return (
@@ -35,5 +44,5 @@ export function GlobeView() {
     );
   }
 
-  return <Scene />;
+  return <SceneBoundary><Scene /></SceneBoundary>;
 }

@@ -1,0 +1,183 @@
+{
+  "review_date": "2026-10-04",
+  "note": "Three blurb claims corrected using primary references. Coordinate accuracy, other blurbs and media licensing remain unverified; no blanket content certification.",
+  "locations": [
+    {
+      "id": "mcmurdo",
+      "source_url": null,
+      "checked_date": null,
+      "reviewer": null,
+      "verification": "owner evidence required"
+    },
+    {
+      "id": "reykjavik",
+      "source_url": null,
+      "checked_date": null,
+      "reviewer": null,
+      "verification": "owner evidence required"
+    },
+    {
+      "id": "tromso",
+      "source_url": null,
+      "checked_date": null,
+      "reviewer": null,
+      "verification": "owner evidence required"
+    },
+    {
+      "id": "london",
+      "source_url": null,
+      "checked_date": null,
+      "reviewer": null,
+      "verification": "owner evidence required"
+    },
+    {
+      "id": "paris",
+      "source_url": null,
+      "checked_date": null,
+      "reviewer": null,
+      "verification": "owner evidence required"
+    },
+    {
+      "id": "venice",
+      "source_url": "https://whc.unesco.org/en/list/394/",
+      "checked_date": "2026-10-04",
+      "reviewer": null,
+      "verification": "blurb geography checked only; coordinate and media provenance not verified"
+    },
+    {
+      "id": "cairo",
+      "source_url": null,
+      "checked_date": null,
+      "reviewer": null,
+      "verification": "owner evidence required"
+    },
+    {
+      "id": "cape-town",
+      "source_url": "https://www.sanparks.org/parks/agulhas/what-to-do/activities/scenic-landmarks",
+      "checked_date": "2026-10-04",
+      "reviewer": null,
+      "verification": "blurb geography checked only; coordinate and media provenance not verified"
+    },
+    {
+      "id": "petra",
+      "source_url": null,
+      "checked_date": null,
+      "reviewer": null,
+      "verification": "owner evidence required"
+    },
+    {
+      "id": "dubai",
+      "source_url": null,
+      "checked_date": null,
+      "reviewer": null,
+      "verification": "owner evidence required"
+    },
+    {
+      "id": "taipei",
+      "source_url": null,
+      "checked_date": null,
+      "reviewer": null,
+      "verification": "owner evidence required"
+    },
+    {
+      "id": "kyoto",
+      "source_url": null,
+      "checked_date": null,
+      "reviewer": null,
+      "verification": "owner evidence required"
+    },
+    {
+      "id": "singapore",
+      "source_url": "https://www.mpa.gov.sg/port-marine-ops/arrivals-and-departures/vessels-arriving-in-singapore",
+      "checked_date": "2026-10-04",
+      "reviewer": null,
+      "verification": "blurb geography checked only; coordinate and media provenance not verified"
+    },
+    {
+      "id": "angkor",
+      "source_url": null,
+      "checked_date": null,
+      "reviewer": null,
+      "verification": "owner evidence required"
+    },
+    {
+      "id": "sydney",
+      "source_url": null,
+      "checked_date": null,
+      "reviewer": null,
+      "verification": "owner evidence required"
+    },
+    {
+      "id": "new-york",
+      "source_url": null,
+      "checked_date": null,
+      "reviewer": null,
+      "verification": "owner evidence required"
+    },
+    {
+      "id": "machu-picchu",
+      "source_url": null,
+      "checked_date": null,
+      "reviewer": null,
+      "verification": "owner evidence required"
+    },
+    {
+      "id": "rio",
+      "source_url": null,
+      "checked_date": null,
+      "reviewer": null,
+      "verification": "owner evidence required"
+    }
+  ],
+  "assets": [
+    {
+      "file": "public/og.jpg",
+      "sha256": "c709d5a37c741b435c6f604d05365171ba7a45f1ef787c33c7ca430081512ab4",
+      "source_url": null,
+      "license": null,
+      "verification": "owner evidence required"
+    },
+    {
+      "file": "public/textures/earth-clouds.png",
+      "sha256": "7d3b82ef6b3feb506fc06f02a744aed3d864e23e7417075005f4082a7ff935a4",
+      "source_url": null,
+      "license": null,
+      "verification": "owner evidence required"
+    },
+    {
+      "file": "public/textures/earth-day.jpg",
+      "sha256": "2faa400d1eade3bc44caf6750d1b772bd9bbb6d87362c02bc7c3304e78fa0a9d",
+      "source_url": null,
+      "license": null,
+      "verification": "owner evidence required"
+    },
+    {
+      "file": "public/textures/earth-night.jpg",
+      "sha256": "355ab23dd1323315b393d7b91dd2d7ee223a1cbaaba2b48dc72ba90d371ced24",
+      "source_url": null,
+      "license": null,
+      "verification": "owner evidence required"
+    },
+    {
+      "file": "public/textures/earth-normal.jpg",
+      "sha256": "3fc43e9639c34e8223c4a871e3bdf5b2d52ee79f7e89ce3f28cba45d4cac031a",
+      "source_url": null,
+      "license": null,
+      "verification": "owner evidence required"
+    },
+    {
+      "file": "public/textures/earth-specular.jpg",
+      "sha256": "2df48906732d7a458b2d0a7cdec51a829262307c6bdee4cfdf079a4dd7c71c69",
+      "source_url": null,
+      "license": null,
+      "verification": "owner evidence required"
+    },
+    {
+      "file": "public/x-banner.jpg",
+      "sha256": "f6fae407b70c9c7fb85620d4e9daa8649ae145528619778047374401c46195fb",
+      "source_url": null,
+      "license": null,
+      "verification": "owner evidence required"
+    }
+  ]
+}

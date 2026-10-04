@@ -54,7 +54,7 @@
 ```bash
 git clone https://github.com/richie7p/Meridian.git
 cd Meridian
-npm install
+npm ci
 npm run dev
 ```
 
@@ -81,3 +81,7 @@ public/textures/        地球日/夜/法線/高光/雲層貼圖
 ## 授權
 
 本專案未附授權檔案；如需轉用，請先與倉庫擁有者確認。原始專案說明註記：地球貼圖取自 three.js 範例資源與 NASA 風格藍大理石公開影像。
+
+## Audit and verification
+
+See [the audit follow-up](docs/AUDIT-FOLLOWUP.md) for fixes, reproducible test commands, bundle budgets and remaining device/deployment checks.

@@ -54,7 +54,7 @@ Requires Node.js 22 and npm.
 ```bash
 git clone https://github.com/richie7p/Meridian.git
 cd Meridian
-npm install
+npm ci
 npm run dev
 ```
 
@@ -81,3 +81,7 @@ public/textures/        Earth day/night/normal/specular/cloud textures
 ## License and assets
 
 No project license file is included. Contact the repository owner before reuse. The original project notes identify the Earth textures as coming from Three.js example resources and NASA-style Blue Marble public imagery.
+
+## Audit and verification
+
+See [the audit follow-up](docs/AUDIT-FOLLOWUP.md) for fixes, reproducible test commands, bundle budgets and remaining device/deployment checks.

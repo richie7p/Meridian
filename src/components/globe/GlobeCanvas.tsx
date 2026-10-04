@@ -12,13 +12,7 @@ import { Starfield } from "./Starfield";
 
 function LoaderOverlay() {
   const ready = useGlobeStore((s) => s.assetsReady);
-  const setAssetsReady = useGlobeStore((s) => s.setAssetsReady);
   const [mounted, setMounted] = useState(true);
-
-  useEffect(() => {
-    const t = window.setTimeout(() => setAssetsReady(true), 6000);
-    return () => window.clearTimeout(t);
-  }, [setAssetsReady]);
 
   useEffect(() => {
     if (!ready) return;
@@ -34,6 +28,8 @@ function LoaderOverlay() {
         "loader-overlay absolute inset-0 z-30 flex items-center justify-center transition-opacity duration-(--motion-slow) ease-(--ease-smooth-out)",
         ready ? "pointer-events-none opacity-0" : "opacity-100",
       )}
+      role="status"
+      aria-label="載入地球儀"
       aria-hidden={ready}
     >
       <div className="flex flex-col items-center gap-5">
@@ -103,6 +99,7 @@ function Scene() {
 }
 
 export function GlobeCanvas() {
+  const [rendererCreated, setRendererCreated] = useState(false);
   const interacting = useGlobeStore((s) => s.interacting);
 
   return (
@@ -113,6 +110,7 @@ export function GlobeCanvas() {
       )}
     >
       <Canvas
+        fallback={<p role="alert">瀏覽器不支援 WebGL，請使用地標列表探索。</p>}
         camera={{
           position: INITIAL_CAMERA,
           fov: 42,
@@ -126,6 +124,7 @@ export function GlobeCanvas() {
           powerPreference: "high-performance",
         }}
         onCreated={({ gl }) => {
+          setRendererCreated(true);
           gl.setClearColor("#07090d");
           gl.toneMapping = THREE.ACESFilmicToneMapping;
           gl.toneMappingExposure = 1.08;
@@ -135,7 +134,7 @@ export function GlobeCanvas() {
           <Scene />
         </Suspense>
       </Canvas>
-      <LoaderOverlay />
+      {rendererCreated ? <LoaderOverlay /> : null}
     </div>
   );
 }

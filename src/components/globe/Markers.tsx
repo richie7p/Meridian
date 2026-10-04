@@ -110,9 +110,9 @@ function Marker({ loc }: { loc: Location }) {
           center
           distanceFactor={2.6}
           style={{ pointerEvents: "none" }}
-          zIndexRange={[20, 0]}
+          zIndexRange={[10, 0]}
         >
-          <div className="rounded-sm border border-border bg-surface px-2 py-1">
+          <div data-marker-label={loc.id} className="rounded-sm border border-border bg-surface px-2 py-1">
             <p className="font-display text-sm leading-snug text-fg whitespace-nowrap">
               {loc.nameZh}
             </p>

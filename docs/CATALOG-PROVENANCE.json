@@ -1,6 +1,6 @@
 {
   "review_date": "2026-10-04",
-  "note": "Inventory only; no external provenance or licensing has been verified. Complete original source URL, publisher/date, applicable license and reviewer per entry before reuse/publication.",
+  "note": "Three blurb claims corrected using primary references. Coordinate accuracy, other blurbs and media licensing remain unverified; no blanket content certification.",
   "locations": [
     {
       "id": "mcmurdo",
@@ -39,10 +39,10 @@
     },
     {
       "id": "venice",
-      "source_url": null,
-      "checked_date": null,
+      "source_url": "https://whc.unesco.org/en/list/394/",
+      "checked_date": "2026-10-04",
       "reviewer": null,
-      "verification": "owner evidence required"
+      "verification": "blurb geography checked only; coordinate and media provenance not verified"
     },
     {
       "id": "cairo",
@@ -53,10 +53,10 @@
     },
     {
       "id": "cape-town",
-      "source_url": null,
-      "checked_date": null,
+      "source_url": "https://www.sanparks.org/parks/agulhas/what-to-do/activities/scenic-landmarks",
+      "checked_date": "2026-10-04",
       "reviewer": null,
-      "verification": "owner evidence required"
+      "verification": "blurb geography checked only; coordinate and media provenance not verified"
     },
     {
       "id": "petra",
@@ -88,10 +88,10 @@
     },
     {
       "id": "singapore",
-      "source_url": null,
-      "checked_date": null,
+      "source_url": "https://www.mpa.gov.sg/port-marine-ops/arrivals-and-departures/vessels-arriving-in-singapore",
+      "checked_date": "2026-10-04",
       "reviewer": null,
-      "verification": "owner evidence required"
+      "verification": "blurb geography checked only; coordinate and media provenance not verified"
     },
     {
       "id": "angkor",

@@ -42,3 +42,31 @@ test("unsupported WebGL leaves an accessible catalogue and visible fallback", as
   if (isMobile) await page.getByRole("button", { name: "展開地標列表" }).click();
   await page.locator('[data-loc="paris"]').click(); await expect(page.locator("footer")).toContainText("巴黎");
 });
+
+test("corrected geographic descriptions render for each selected landmark", async ({ page, isMobile }, info) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.goto("/", { waitUntil: "domcontentloaded" });
+  await expect(page.locator("canvas")).toBeVisible();
+  await expect(page.getByRole("status", { name: "載入地球儀" })).toBeHidden();
+  for (const [id, description] of [["cape-town", "厄加勒斯角"], ["singapore", "新加坡海峽"], ["venice", "歷史城區"]]) {
+    if (isMobile) await page.getByRole("button", { name: "展開地標列表" }).click();
+    await page.locator(`[data-loc="${id}"]`).click();
+    await expect(page.locator("footer")).toContainText(description);
+  }
+  if (isMobile) await page.getByRole("button", { name: "展開地標列表" }).click();
+  const marker = page.locator('[data-marker-label="venice"]');
+  await expect(marker).toBeAttached();
+  const labelLayer = await marker.evaluate(node => {
+    const layers: number[] = [];
+    for (let element: HTMLElement | null = node as HTMLElement; element; element = element.parentElement) {
+      const layer = Number.parseInt(getComputedStyle(element).zIndex);
+      if (Number.isFinite(layer)) layers.push(layer);
+    }
+    return Math.max(...layers);
+  });
+  const panelLayer = await page.locator("aside").evaluate(node => Number.parseInt(getComputedStyle(node).zIndex));
+  expect(labelLayer).toBeLessThan(panelLayer);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await mkdir("screenshots", { recursive: true });
+  await page.screenshot({ path: `screenshots/${info.project.name}-content.png` });
+});

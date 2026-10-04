@@ -77,7 +77,7 @@ export const LOCATIONS: Location[] = [
     region: "歐洲",
     lat: 45.4408,
     lng: 12.3155,
-    blurb: "建在潟湖木樁上的城市。沒有馬路，只有潮汐與倒影在巷弄裡換班。",
+    blurb: "潟湖中的歷史城區，以運河、石橋與步行巷弄串起島嶼。潮汐與倒影在水道裡換班。",
   },
   {
     id: "cairo",
@@ -97,7 +97,7 @@ export const LOCATIONS: Location[] = [
     region: "非洲與西亞",
     lat: -33.9249,
     lng: 18.4241,
-    blurb: "桌山俯視兩洋交會。城市夾在峭壁與海岬之間，風是常駐的居民。",
+    blurb: "桌山與大西洋海岸相伴的城市。兩洋交界位於更東南方的厄加勒斯角，風則是這座海港的常駐居民。",
   },
   {
     id: "petra",
@@ -147,7 +147,7 @@ export const LOCATIONS: Location[] = [
     region: "亞洲",
     lat: 1.3521,
     lng: 103.8198,
-    blurb: "馬六甲海峽的樞紐島。赤道氣候裡，港口、花園與金融區被規劃成同一張圖。",
+    blurb: "新加坡海峽旁的港口樞紐。赤道氣候裡，港口、花園與金融區被規劃成同一張圖。",
   },
   {
     id: "angkor",

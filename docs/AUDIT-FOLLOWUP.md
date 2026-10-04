@@ -51,3 +51,7 @@ Actual content sources, dates, coordinates, editorial factual claims and rights 
 - Product domain: 7 passed. Production E2E: 8 passed (desktop/mobile).
 - Current full dependency audit: 0 vulnerabilities.
 - Desktop/mobile screenshots inspected: visible globe and responsive catalogue, no horizontal overflow.
+
+## Content and function acceptance update
+
+See [the 2026-10-04 acceptance record](CONTENT-FUNCTION-ACCEPTANCE.md) for the additional content review, fixes, regression cases and limits. Earlier counts above describe the audit baseline.
